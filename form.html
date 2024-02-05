@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Form</title>
+</head>
+<body class = "form">
+    <h2>ANSWER MY FORM</h2>
+    <div class = "overlay2">
+        <form name="questions" method="post" action="https://script.google.com/macros/s/AKfycbxLX8Xt-xMKKgHBa78AHoDCQTP4XMhkGSdapFv7UVkBOHbWqBVcxnzBnGuzi6EYrYFQ/exec">    
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" required>
+            
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            
+                <label>Choose your preferred communication method:</label>
+                <div class = "items">
+                    <input type="radio" id="phone" name="communication" value="phone" required>
+                    <label for="phone">Phone</label>
+            
+                    <input type="radio" id="email" name="communication" value="email" required>
+                    <label for="email">Email</label>
+                </div>  
+
+                <div class = "items">
+                    <label for="date">Birthday:</label>
+                    <input type = "date" name="date" id="date" min="2023-01-01">
+                </div>
+            
+                <label>Select your interests:</label>
+                <div class = "items">
+                    <input type="checkbox" id="sports" name="interests" value="sports" >
+                    <label for="sports">Sports</label>
+            
+                    <input type="checkbox" id="music" name="interests" value="music" >
+                    <label for="music">Music</label>
+            
+                    <input type="checkbox" id="movies" name="interests" value="movies" >
+                    <label for="movies">Movies</label>
+                </div>
+            
+                <label for="reason">Why are you here:</label>
+                <input type="text" id="reason" name="reason" required>
+            </div>
+            <div class="button-container">
+                <button type="submit" onclick="validateForm()">Submit</button>
+            </div>            
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

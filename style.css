@@ -1,0 +1,161 @@
+body.index {
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body.form {
+    background-image: url('bg-form.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+
+.box-text {
+    position: absolute;
+    font-family: sans-serif;
+    color: rgba(11, 25, 70, 0.801);
+    font-size: 25px;
+    margin-bottom: 75px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center; /* Vertically center the text */
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 25%;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha channel for transparency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px); /* Apply the blur effect to the box */
+    border-radius: 2%;
+    transform: translate(-50%, -50%);
+}
+.overlay2 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 50%;
+    height: 125%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border-radius: 2%;
+    transform: translate(-50%, -50%);
+}
+
+
+.click-me {
+    padding: 15px 30px;
+    background-color: #215374a6;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; /* Adjust if you want rounded corners for the button */
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+}
+
+.click-me:hover {
+    background-color: #1169a4a3;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: hsl(0, 4%, 84%);
+}
+
+
+h2 {
+    color: #f9f9f9;
+    text-align: center;
+    border-bottom: 2px solid #110825;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin-bottom: -15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    top: 10%;
+    padding-top: 10%;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+.button-container {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #1d0953;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.button-container{
+    margin-top: 10px;
+}
+
+
+button:hover {
+    background-color: #1d2d7e;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+}
+
+
+
